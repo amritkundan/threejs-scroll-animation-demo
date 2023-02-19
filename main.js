@@ -45,7 +45,7 @@ scene.add(pointLight, ambientLight);
 
 function addStar() {
   const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-  const material = new THREE.MeshStandardMaterial({ color: 0xff5349 });
+  const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
   const star = new THREE.Mesh(geometry, material);
 
   const [x, y, z] = Array(3)
@@ -78,7 +78,7 @@ const normalTexture = new THREE.TextureLoader().load('normal.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
-  new THREE.MeshStandardMaterial({ color: 0xffffff })
+  new THREE.MeshStandardMaterial({ color: 0xff5349 })
 );
 
 scene.add(moon);
