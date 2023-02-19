@@ -1,34 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@amritkundan 
-fireship-io
-/
-threejs-scroll-animation-demo
-Public
-Fork your own copy of fireship-io/threejs-scroll-animation-demo
-Code
-Issues
-9
-Pull requests
-4
-Actions
-Projects
-Security
-Insights
-threejs-scroll-animation-demo/main.js /
-@codediodeio
-codediodeio full working demo
-Latest commit 21f4c09 on May 21, 2021
- History
- 1 contributor
-130 lines (87 sloc)  2.9 KB
-
 import './style.css';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
@@ -159,18 +128,3 @@ function animate() {
 }
 
 animate();
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-threejs-scroll-animation-demo/main.js at main · fireship-io/threejs-scroll-animation-demo
