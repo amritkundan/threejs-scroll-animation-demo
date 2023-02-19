@@ -38,7 +38,7 @@ scene.add(pointLight, ambientLight);
 // Helpers
 
 const lightHelper = new THREE.PointLightHelper(pointLight)
-const gridHelper = new THREE.GridHelper(200, 50);
+//const gridHelper = new THREE.GridHelper(200, 50);
 scene.add(lightHelper, gridHelper)
 
 // const controls = new OrbitControls(camera, renderer.domElement);
@@ -65,11 +65,7 @@ scene.background = spaceTexture;
 
 // Avatar
 
-const jeffTexture = new THREE.TextureLoader().load('jeff.png');
 
-const jeff = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: jeffTexture }));
-
-scene.add(jeff);
 
 // Moon
 
@@ -90,8 +86,6 @@ moon.position.z = 3;
 moon.position.setX(15);
 moon.position.setY(5);
 
-jeff.position.z = -5;
-jeff.position.x = 2;
 
 // Scroll Animation
 
@@ -101,8 +95,7 @@ function moveCamera() {
   moon.rotation.y += 0.075;
   moon.rotation.z += 0.05;
 
-  jeff.rotation.y += 0.01;
-  jeff.rotation.z += 0.01;
+  
 
   camera.position.z = t * -0.01;
   camera.position.x = t * -0.0002;
